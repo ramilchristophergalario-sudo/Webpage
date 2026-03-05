@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+        <nav>
+       <div class="logo-container">
+    <img src="images/LCBA_Seal.png" alt="LCBA Logo" class="logo">
+    <div class="logo-text">
+        <h2>Laguna College of Business and Arts</h2>
+    </div>
+</div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
+            <li><a href="about-lcba.html">About LCBA</a></li>
+            <li><a href="about-strand.html">TVL - HE</a></li>
+            <li><a href="image-gallery.html">Images</a></li>
+            <li><a href="video-gallery.html">Videos</a></li>
+            <li><a href="games.html">Games</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="section">
+    <h2 style="text-align:center;">Slideshow Gallery</h2>
+
+<div class="gallery-container">
+
+  <div class="gallery-slide">
+    <img src="images/cook2.jpg" alt="Cookery Activity">
+  </div>
+
+  <div class="gallery-slide">
+    <img src="images/bev2.jpg" alt="Beverage Activity">
+  </div>
+
+  <div class="gallery-slide">
+    <img src="images/bread2.jpg" alt="Breadmaking Activity">
+  </div>
+
+  <div class="gallery-slide">
+    <img src="images/house1.jpg" alt="Housekeeping Activity">
+  </div>
+
+  <a class="prev" onclick="plusGallerySlides(-1)">❮</a>
+  <a class="next" onclick="plusGallerySlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="gallery-caption"></p>
+  </div>
+
+  <div class="thumb-row">
+    <div class="thumb-column">
+      <img src="images/cook2.jpg" onclick="currentGallerySlide(1)" alt="Cookery Activity">
+    </div>
+    <div class="thumb-column">
+      <img src="images/bev2.jpg" onclick="currentGallerySlide(2)" alt="Beverage Activity">
+    </div>
+    <div class="thumb-column">
+      <img src="images/bread2.jpg" onclick="currentGallerySlide(3)" alt="Breadmaking Activity">
+    </div>
+    <div class="thumb-column">
+      <img src="images/house1.jpg" onclick="currentGallerySlide(4)" alt="Housekeeping Activity">
+    </div>
+  </div>
+
+</div>
+
+<a href="index.html" class="btn" style="margin-top:30px;">← Go Back to Home</a>
+</section>
+
+<div class="scroll-gallery-section">
+
+  <h2>More TVL - HE Pictures</h2>
+
+  <div class="scroll-container">
+    <img src="images/cook3.jpg" alt="Cookery">
+    <img src="images/bev3.jpg" alt="Beverage">
+    <img src="images/bread3.jpg" alt="Breadmaking">
+    <img src="images/house2.jpg" alt="Housekeeping">
+    <img src="images/house3.jpg" alt="Housekeeping">
+  </div>
+
+</div>
+
+<footer>
+    <p>© 2026 LCBA</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
